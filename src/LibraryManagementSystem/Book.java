@@ -9,7 +9,8 @@ package LibraryManagementSystem;
  * @author kanav
  */
 class Book {
-    private String name;
+
+    private String namee;
     private String barcode;
     private String publication;
     private Category category;
@@ -41,5 +42,5 @@ class Book {
     public String toString() {
         return "Book{" + "name=" + name + ", barcode=" + barcode + ", publication=" + publication + ", category=" + category + '}';
     }
-    
+
 }
