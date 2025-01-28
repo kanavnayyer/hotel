@@ -10,7 +10,7 @@ package LibraryManagementSystem;
  */
 class Book {
 
-    private String namee;
+    private String name;
     private String barcode;
     private String publication;
     private Category category;
