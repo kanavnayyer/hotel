@@ -11,20 +11,26 @@ import java.util.HashMap;
  *
  * @author kanav
  */
+
+/* Mark: User
+description :   person who logins whatsapp
+
+*/
 public class User {
+
     private String name;
     private String mobNo;
     private ArrayList<Contact> contacts;
-    private HashMap<User,ArrayList<Message>>messages;
-    private ArrayList<Status>status;
+    private HashMap<User, ArrayList<Message>> messages;
+    private ArrayList<Status> status;
 
     public User(String name, String mobNo, ArrayList<Contact> contacts,
             HashMap<User, ArrayList<Message>> messages, ArrayList<Status> status) {
         this.name = name;
         this.mobNo = mobNo;
         this.contacts = new ArrayList<>();
-        this.messages =  new HashMap<>();
-        this.status =  new ArrayList<>();
+        this.messages = new HashMap<>();
+        this.status = new ArrayList<>();
     }
 
     public String getName() {
@@ -51,7 +57,5 @@ public class User {
     public ArrayList<Status> getStatus() {
         return status;
     }
-    
-    
-    
+
 }

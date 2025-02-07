@@ -10,19 +10,22 @@ import java.time.LocalDateTime;
  *
  * @author kanav
  */
+
+
+// status contains getters like type of content  timestamp
 public class Status {
-    
+
     private User user;
     private Media media;
     private String content;
     private LocalDateTime timeStamp;
-    
-    public Status(User user, Media media, String Content){
-   this.content=content;
-   this.media=media;
-   this.timeStamp=LocalDateTime.now();
-   this.user=user;
-    
+
+    public Status(User user, Media media, String Content) {
+        this.content = content;
+        this.media = media;
+        this.timeStamp = LocalDateTime.now();
+        this.user = user;
+
     }
 
     public User getUser() {
@@ -40,5 +43,5 @@ public class Status {
     public LocalDateTime getTimeStamp() {
         return timeStamp;
     }
-    
+
 }

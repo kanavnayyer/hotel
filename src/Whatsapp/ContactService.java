@@ -10,29 +10,35 @@ import java.util.ArrayList;
  *
  * @author kanav
  */
+
+/* Mark: ContactService
+description :  responsible for managing contact adding and deleting user
+
+*/
 public class ContactService {
+
     private ArrayList<User> users;
-    
-    public ContactService(ArrayList<User> users){
-    this.users= new ArrayList<>();
-    
+
+    public ContactService(ArrayList<User> users) {
+        this.users = new ArrayList<>();
+
     }
-    
-    public void addUser(User user){
-    users.add(user);
+
+    public void addUser(User user) {
+        users.add(user);
     }
-    
-    public void addContact(User user, Contact contact){
-    user.getContacts().add(contact);
+
+    public void addContact(User user, Contact contact) {
+        user.getContacts().add(contact);
     }
-    
-    public User getUserByNo(String mobNo){
-    for(User user:users){
-    if(user.getMobNo().equals(mobNo))
-        return user;
+
+    public User getUserByNo(String mobNo) {
+        for (User user : users) {
+            if (user.getMobNo().equals(mobNo)) {
+                return user;
+            }
+        }
+        return null;
     }
-    return null;
-    }
-    
-    
+
 }

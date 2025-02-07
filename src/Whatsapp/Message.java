@@ -6,11 +6,15 @@ package Whatsapp;
 
 import java.time.LocalDateTime;
 
-/**
- *
- * @author kanav
- */
+
+
+/* Mark: Message
+description :   includes getter and setters
+
+*/
+
 public class Message {
+
     private User Sender;
     private User Receiver;
     private Media media;
@@ -22,7 +26,7 @@ public class Message {
         this.Receiver = Receiver;
         this.media = media;
         this.content = content;
-        this.timeStamp= LocalDateTime.now();
+        this.timeStamp = LocalDateTime.now();
     }
 
     public User getSender() {
@@ -47,9 +51,8 @@ public class Message {
 
     @Override
     public String toString() {
-        return "Message{" + "Sender=" + Sender + ", Receiver=" + Receiver +
-                ", media=" + media + ", content=" + content + ", timeStamp=\n" + timeStamp + '}';
+        return "Message{" + "Sender=" + Sender + ", Receiver=" + Receiver
+                + ", media=" + media + ", content=" + content + ", timeStamp=\n" + timeStamp + '}';
     }
-    
-    
+
 }

@@ -11,5 +11,6 @@ package Whatsapp;
 public enum Media {
     text,
     audio,
-    video
+    video,
+    image
 }

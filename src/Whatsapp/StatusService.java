@@ -10,21 +10,30 @@ import java.util.ArrayList;
  *
  * @author kanav
  */
+
+/* Mark: StatusService
+description :  stores status 
+
+*/
 public class StatusService {
+
     private ArrayList<Status> statuses;
-    public StatusService(){
-    statuses=new ArrayList<>();
+
+    public StatusService() {
+        statuses = new ArrayList<>();
     }
-    public void addStatus(Status status){
-    statuses.add(status);}
-    
-    public ArrayList<Status>getStatuses(){
-    return statuses;}
+
+    public void addStatus(Status status) {
+        statuses.add(status);
+    }
+
+    public ArrayList<Status> getStatuses() {
+        return statuses;
+    }
 
     @Override
     public String toString() {
         return "StatusService{" + "statuses=" + statuses + '}';
     }
-    
-    
+
 }

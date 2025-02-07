@@ -8,13 +8,16 @@ package Whatsapp;
  *
  * @author kanav
  */
+
+// contact class include getters 
 public class Contact {
+
     private String name;
     private String mobNo;
-    
-    public Contact(String name, String mobNo){
-    name= this.name;
-    mobNo=this.mobNo;
+
+    public Contact(String name, String mobNo) {
+        name = this.name;
+        mobNo = this.mobNo;
     }
 
     public String getName() {
@@ -29,6 +32,5 @@ public class Contact {
     public String toString() {
         return "Contact{" + "name=" + name + ", mobNo=" + mobNo + "\n";
     }
-    
-    
+
 }
